@@ -3,6 +3,10 @@ class User {
         this.name = "Sagor",
         this.age = 34
     }
+
+    dosomething() {
+        console.log("Do something")
+    }
 }
 
 class User2 extends User{
@@ -16,4 +20,4 @@ class User2 extends User{
 
 var korim = new User2;
 
-console.log(korim)
+console.log(korim.dosomething())
