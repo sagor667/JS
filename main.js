@@ -16,6 +16,10 @@ class User2 extends User{
         this.game = "football",
         this.gender = "male"
     }
+
+    dosomething(){
+        console.log("This is dosomething from 2")
+    }
 }
 
 var korim = new User2;
