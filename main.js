@@ -1,27 +1,12 @@
-class User {
-    constructor() {
-        this.name = "Sagor",
-        this.age = 34
+// Callback function Learning
+function first(Callback) {
+    for (let i = 1; i <= 20; i++) {
+        console.log(i)
     }
-
-    dosomething() {
-        console.log("Do something")
-    }
+    Callback();
 }
 
-class User2 extends User{
-    constructor(){
-        super();
-        this.name = "Hosen"
-        this.game = "football",
-        this.gender = "male"
-    }
-
-    dosomething(){
-        console.log("This is dosomething from 2")
-    }
-}
-
-var korim = new User2;
-
-console.log(korim.dosomething())
+first(function second() {
+    // console.log("Second Function is Called")
+    document.write("This is Second Function")
+})
